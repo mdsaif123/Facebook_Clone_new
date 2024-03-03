@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="logo.png" alt="" class="logo"></a>
+            <a href=""><img src="notification.png" alt=""></a>
+            <a href=""><img src="message.png" alt=""></a>
+            <a href=""><img src="watch.png" class="watch"></a>
+        </div>
+        <div class="nav-right">
+            <div class="input">
+        
+            <input type="text" placeholder="Search..."></div>
+            <div class="user-icon online" onclick="settingmenutoggle()">
+            <img src="saif.jpg" ></div>
+        </div>
+<!-- ------------------menu-settings-------------------- -->
+        <div class="menu-setting">
+
+            <div id="dark-btn" class="">
+                <span></span>
+            </div>
+
+
+            <div class="menu-inner-setting">
+                <div class="user-profile-menu">
+
+                    <div class="user-profile5">
+                        <img src="saif.jpg" alt="">
+                    </div>
+                    <div class="name1">
+                        <h3>Saif king</h3>
+                       <a href=""> See Your Profile</a>
+                    </div> <hr class="user-hr">
+
+
+                    <div class="user-profile-setting">
+                        <img src="setting.png" alt="">
+                        <a href="">Setting & Privacy</a>
+                
+                    </div>
+                    <div class="user-profile-setting">
+                        <img src="help.png" alt="">
+                        <a href="">Help & Support</a>
+                      
+                    </div>
+                    <div class="user-profile-setting">
+                        <img src="display.png" alt="">
+                        <a href="">display & Accessibility</a>
+                     
+                    </div>
+                    <div class="user-profile-setting">
+                        <img src="logout.png" alt="">
+                        <a href="index.html">Logout</a>
+                    
+                    </div>
+                   
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+    <!-- -------------cover ------------- -->
+
+    <div class="profile-container">
+        <div class="cover-img">
+            <img src="cover.png" alt="">
+        </div>
+
+        <div class="profile-dp-cont">
+<div class="profile-dp1">
+    <img src="saif.jpg" class="dp-profile" >
+    <div >
+        <h3>Saif King</h3>
+        <p>542 Friends - 20 mutual</p>
+        <img src="member-1.png" class="dp-profile-friends">
+        <img src="member-2.png" class="dp-profile-friends">
+        <img src="member-3.png" class="dp-profile-friends">
+        <img src="member-4.png" class="dp-profile-friends">
+    </div>
+</div>
+
+
+<div class="profile-dp2">
+    <button class="Friend-req"><img src="add-friends.png" onclick="request()">Friends</button>
+    <button><img src="message.png" alt="">message</button>
+    <p id="demo">
+
+    </p>
+
+</div> 
+</div>
+<!-- ------------2colums intro and feed-------------- -->
+
+<div class="pd-cont">
+    <div class="pd-left">
+        <div class="intro">
+            <h3>intro</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, doloremque.</p>
+        </div>
+     <button>Edit Bio</button>
+
+     <ul>
+        <li><img src="profile-job.png" >Director at Facebook Company</li>
+        <li><img src="profile-study.png" >Studied at Al-Shams Millia College Araria.(Isc)</li>
+        <li><img src="profile-study.png" >Studied at Al-Shams Millia College Araria.(Isc)</li>
+        <li><img src="profile-study.png" > Went to Moti High School madanpur araria</li>
+        <li><img src="profile-home.png" >Lives in Mumbai, Maharashtra</li>
+     </ul>
+
+     <div class="profile-intro">
+        <div class="title-box">
+            <h3>Photos</h3>
+            <a href=""> All Photos</a>
+        </div>
+       <div class="photo-box">
+        <div>
+            <img src="photo1.png" >
+            <img src="photo2.png" >
+            <img src="photo3.png" >
+        </div>
+        <div>
+            <img src="photo4.png" >
+            <img src="photo5.png" >
+            <img src="photo6.png" >
+
+
+        </div>
+       </div>
+     </div>
+
+
+     <div class="profile-intro">
+        <div class="title-box">
+            <h3>Friends</h3>
+            <a href=""> See All Friends</a>
+        </div>
+       <div class="photo-box">
+        <div>
+            <img src="photo1.png" >
+            <img src="photo2.png" >
+            <img src="photo3.png" >
+        </div>
+        <div>
+            <img src="photo4.png" >
+            <img src="photo5.png" >
+            <img src="photo6.png" >
+
+
+        </div>
+       </div>
+     </div>
+
+
+
+    </div>
+    <div class="pd-right">
+        <div class="post-contain">
+            <div class="user-profile">
+                <img src="profile.png" alt="">
+            </div>
+            <div class="name">
+                <h3>Saif king</h3>
+                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+            </div>
+        
+<div class="post-input-cont">
+<textarea rows="3" placeholder="Whats say your mind"></textarea>
+<div class="add-post-links">
+    <a href=""><img src="live-video.png" alt="">Live</a>
+    <a href=""><img src="photo.png" alt="">Photo</a>
+    <a href=""><img src="feeling.png" alt="">Activity</a>
+</div>
+</div>
+</div>
+
+
+<div class="img-post">
+    <div class="user-profile1">
+    <div class="user-profile">
+        <img src="saif2.jpg" alt="">
+    </div>
+    <div class="name">
+        <h3>Saif king</h3>
+        <small>17/10/202  04:35PM</i></small>
+    </div>
+</div>
+<div class="post-photo">
+<p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ipsam repellat eos voluptatem tempora dolorum itaque laborum iure quod qui.</p>
+<img src="feed-image-2.png" ></div>
+
+<div class="add-post-likes">
+    <a href=""><img src="like-blue.png" alt="">8.4k</a>
+    <a href=""><img src="comments.png" alt="">2.4k</a>
+    <a href=""><img src="share.png" alt="">500k</a>
+</div>
+
+</div>
+<div class="img-post">
+    <div class="user-profile1">
+    <div class="user-profile">
+        <img src="saif3.jpg" alt="">
+    </div>
+    <div class="name">
+        <h3>Saif king</h3>
+        <small>17/10/202  04:35PM</i></small>
+    </div>
+</div>
+<div class="post-photo">
+<p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ipsam repellat eos voluptatem tempora dolorum itaque laborum iure quod qui.</p>
+<img src="feed-image-3.png" ></div>
+
+<div class="add-post-likes">
+    <a href=""><img src="like-blue.png" alt="">125k</a>
+    <a href=""><img src="comments.png" alt="">2.5k</a>
+    <a href=""><img src="share.png" alt="">1.5k</a>
+</div>
+
+
+
+
+</div>
+
+<!-- --------------------3rd post---------------- -->
+
+<div class="img-post">
+    <div class="user-profile1">
+    <div class="user-profile">
+        <img src="saif4.jpg" alt="">
+    </div>
+    <div class="name">
+        <h3>Saif king</h3>
+        <small>17/10/202  04:35PM</i></small>
+    </div>
+</div>
+<div class="post-photo">
+<p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ipsam repellat eos voluptatem tempora dolorum itaque laborum iure quod qui.</p>
+<img src="feed-image-4.png" ></div>
+
+<div class="add-post-likes">
+    <a href=""><img src="like-blue.png" alt="">5.5k</a>
+    <a href=""><img src="comments.png" alt="">1.2k</a>
+    <a href=""><img src="share.png" alt="">55.5k</a>
+</div>
+
+</div>
+
+<!-- ---------------------4th post------------------- -->
+          
+<div class="img-post">
+    <div class="user-profile1">
+    <div class="user-profile">
+        <img src="saif5.jpg" alt="">
+    </div>
+    <div class="name">
+        <h3>Saif king</h3>
+        <small>17/10/202  04:35PM</i></small>
+    </div>
+</div>
+<div class="post-photo">
+<p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ipsam repellat eos voluptatem tempora dolorum itaque laborum iure quod qui.</p>
+<img src="feed-image-1.png" ></div>
+
+<div class="add-post-likes">
+    <a href=""><img src="like-blue.png" alt="">120</a>
+    <a href=""><img src="comments.png" alt="">52</a>
+    <a href=""><img src="share.png" alt="">102</a>
+</div>
+
+</div>
+
+    </div>
+</div>
+
+
+
+
+        
+    </div>
+    
+    
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
